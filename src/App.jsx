@@ -207,7 +207,7 @@ const App = () => {
       <button
         style={{
           position: "absolute",
-          bottom: "20px",
+          top: "10px",
           right: "20px",
           padding: "10px 20px",
           fontSize: "16px",
