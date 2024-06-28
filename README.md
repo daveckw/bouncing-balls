@@ -27,7 +27,7 @@ To install the Bouncing Balls Simulation, follow these steps:
    ```
 2. Navigate to the project directory:
    ```
-   cd bouncing-balls-simulation
+   cd bouncing-balls
    ```
 3. Install the dependencies:
    ```
