@@ -16,18 +16,18 @@ export default function WhatsappBlast() {
     useEffect(() => {
         const totalWidth = windowSize.width;
         console.log(totalWidth);
+        const columnCount = columnWidths.length;
 
         if (totalWidth < 600) {
-            let columnDisplays = [false, false, false];
+            let columnDisplays = Array(columnCount).fill(false);
             columnDisplays[currentColumn] = true;
             setColumnDisplays(columnDisplays);
 
-            let columnWidths = [0, 0, 0];
+            let columnWidths = Array(columnCount).fill(0);
             columnWidths[currentColumn] = totalWidth;
             setColumnWidths(columnWidths);
         } else {
             setColumnDisplays([true, true, true]);
-            const columnCount = columnWidths.length;
             const newColumnWidths = Array(columnCount).fill(totalWidth / columnCount);
             setColumnWidths(newColumnWidths);
         }
