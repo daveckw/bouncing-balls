@@ -5,11 +5,18 @@
   "type": "module",
   "main": "./dist/my-react-game.umd.js",
   "module": "./dist/my-react-game.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-react-game.es.js",
+      "require": "./dist/my-react-game.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "npm run build"
   },
   "files": [
     "dist"
