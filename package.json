@@ -5,10 +5,12 @@
   "type": "module",
   "main": "./dist/my-react-game.umd.js",
   "module": "./dist/my-react-game.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/my-react-game.es.js",
-      "require": "./dist/my-react-game.umd.js"
+      "require": "./dist/my-react-game.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
